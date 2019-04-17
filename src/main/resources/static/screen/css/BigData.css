@@ -132,7 +132,7 @@ body{
     height: 92%;
     float: left;
     margin-right: 0.3%;
-    background-image: url("../img/con_bg.png");
+    /*background-image: url("../img/con_bg.png");*/
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
