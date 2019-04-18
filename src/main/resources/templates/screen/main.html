@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>大数据管理平台</title>
     <link rel="shortcut icon" href="/screen/img/favicon1.ico">
     <link href="/screen/css/BigData.css" rel="stylesheet" type="text/css" />
     <link href="/screen/css/index.css" rel="stylesheet" type="text/css" />
@@ -12,8 +14,6 @@
     <link rel="stylesheet" href="/screen/js/artDialog/skins/default.css" type="text/css"/>
     <script src="/screen/js/laydate.js"></script>
     <script src="/screen/js/Home_page.js"></script>
-    <meta charset="UTF-8">
-    <title>大数据管理平台</title>
 
 </head>
 <body >
@@ -74,9 +74,10 @@
 
             <div class="left_cage">
                 <div class="dataAllBorder01 cage_cl" style="margin-top: 9% !important; height: 24%;">
-                    <video autoplay="autoplay" loop="loop" class="dataAllBorder02 video_cage">
-                        <source class="video" title="主监控位" src="video/test_mv02.mov"/>
-                    </video>
+                    <h3 style="color: white" align="center">江南大学可视化试验平台</h3>
+<!--                    <video autoplay="autoplay" loop="loop" class="dataAllBorder02 video_cage">-->
+<!--                        <source class="video" title="主监控位" src="video/test_mv02.mov"/>-->
+<!--                    </video>-->
                 </div>
                 <div class="dataAllBorder01 cage_cl" style="margin-top: 1.5% !important; height: 38%;">
                     <div class="dataAllBorder02 video_cage">
@@ -1763,18 +1764,18 @@
 <script>
     // 百度地图API功能
     var map = new BMap.Map("map");    // 创建Map实例
-    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    map.centerAndZoom(new BMap.Point(120.273, 31.488), 16);  // 初始化地图,设置中心点坐标和地图级别
     //添加地图类型控件
     map.addControl(new BMap.MapTypeControl({
         mapTypes:[
             BMAP_NORMAL_MAP,
             BMAP_HYBRID_MAP
         ]}));
-    var mapStyle={
-        style:"dark"
-    };
-    map.setMapStyle(mapStyle);
-    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    // var mapStyle={
+    //     style:"dark"
+    // };
+    // map.setMapStyle(mapStyle);
+    map.setCurrentCity("无锡");          // 设置地图显示的城市 此项是必须设置的
     map.enableScrollWheelZoom(true);
 </script>
 
