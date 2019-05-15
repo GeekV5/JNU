@@ -1,22 +1,33 @@
 package com.bootdo.jnu.sp.domain;
 
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-/*
-*
-* */
 @Entity
-@Table
-public class JNU_SP_Point_DO {
+@Table(name = "jnu_sp_point")
+public class JNU_SP_Point {
 
+    @Column(name = "id")
     private String id;        //主键
+
+    @Column(name = "longitude")
     private String longitude; //经度
+
+    @Column(name = "latitude")
     private String latitude;  //纬度
+
+    @Column(name = "src")
     private String src;       //监控资源
+
+    @Column(name = "name")
     private String name;      //监控地点名称
+
+    @Column(name = "remark")
     private String remark;    //备注
+
+    //声明 无参数的构造函数
+    public JNU_SP_Point(){}
 
     public String getId() {
         return id;
@@ -68,7 +79,7 @@ public class JNU_SP_Point_DO {
 
     @Override
     public String toString() {
-        return "JNU_SP_Point_DO{" +
+        return "JNU_SP_Point{" +
                 "id='" + id + '\'' +
                 ", longitude='" + longitude + '\'' +
                 ", latitude='" + latitude + '\'' +
