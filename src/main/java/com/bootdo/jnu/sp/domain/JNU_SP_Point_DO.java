@@ -1,7 +1,14 @@
 package com.bootdo.jnu.sp.domain;
+
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /*
 *
 * */
+@Entity
+@Table
 public class JNU_SP_Point_DO {
 
     private String id;        //主键

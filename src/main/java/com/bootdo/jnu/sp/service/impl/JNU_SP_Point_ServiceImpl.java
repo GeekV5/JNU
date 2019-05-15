@@ -10,13 +10,13 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class JNU_SP_Point_ServiceImpl implements JNU_SP_Point_Service {
+public class JNU_SP_Point_ServiceImpl  {
     @Autowired
     private JNU_SP_Point_Dao jnu_sp_point_dao;
 
-    @Override
-    public List<JNU_SP_Point_DO> list(Map<String, Object> map) {
-        return jnu_sp_point_dao.list(map);
-    }
+//    @Override
+//    public List<JNU_SP_Point_DO> list(Map<String, Object> map) {
+//        return jnu_sp_point_dao.list(map);
+//    }
 
 }
