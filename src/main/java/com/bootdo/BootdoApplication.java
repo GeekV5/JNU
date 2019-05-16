@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAutoConfiguration(exclude = {
@@ -13,7 +14,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 })
 @EnableTransactionManagement
 @ServletComponentScan
-@MapperScan({"com.bootdo.*.dao","com.bootdo.jnu.sp.dao"})
+@MapperScan({"com.bootdo.*.dao"})
+@EnableJpaRepositories("com.bootdo.jnu.sp.dao")
 @SpringBootApplication
 @EnableCaching
 public class BootdoApplication {
